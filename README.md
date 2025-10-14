@@ -14,7 +14,8 @@ index.php – Pagina principală
 
 style.css – Stilizarea paginii
 
-versiuni.txt – Jurnalul modificărilor
+versiuni.md – Jurnalul modificărilor
 
 README.md – Documentația proiectului
+
 
