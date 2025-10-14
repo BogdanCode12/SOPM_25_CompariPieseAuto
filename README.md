@@ -6,7 +6,7 @@ Proiect pentru laboratorul SOPM – un site static (HTML/CSS/JS) cu 3 pagini car
 
 🧪 Versiune curentă
 
-v1.0.0 – Versiunea inițială a proiectului
+v1.2.4
 
 📁 Structura proiectului
 
@@ -17,5 +17,6 @@ style.css – Stilizarea paginii
 versiuni.md – Jurnalul modificărilor
 
 README.md – Documentația proiectului
+
 
 
