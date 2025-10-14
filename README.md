@@ -9,4 +9,5 @@ v1.0.0 – Versiunea inițială a proiectului
 index.php – Pagina principală
 style.css – Stilizarea paginii
 versiuni.txt – Jurnalul modificărilor
+
 README.md – Documentația proiectului
