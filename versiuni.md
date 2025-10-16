@@ -13,3 +13,5 @@ v1.2.2 - Adăugat `db.php` (conexiune PDO la MySQL)
 v1.2.3 - Adăugat `style.css` minimalist și responsive
 
 v1.2.4 - Actualizat `README.md` (descriere extinsă, structură proiect)
+
+v1.2.5 - Actualizat tema site-ului adaugat logo si imagini la fiecare categorie

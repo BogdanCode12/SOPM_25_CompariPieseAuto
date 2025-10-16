@@ -8,13 +8,16 @@
   --accent: #0ea5e9; /* albastru discret */
 }
 
-*{box-sizing:border-box}
-html,body{height:100%}
 body{
   margin:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Helvetica, Arial, sans-serif;
   background:var(--bg); color:var(--text);
   -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+}
+.logo-container{
+  display: flex;
+    height:100px;
+    width:100px ;
 }
 
 /* Layout de bază */

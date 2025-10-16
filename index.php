@@ -22,9 +22,9 @@ $categorii = [
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Compari Piese Auto — Home</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Stiluri minime (fallback) — poți muta în style.css */
-    :root{--bg:#fafafa;--card:#fff;--border:#eaeaea;--text:#111;--muted:#666}
+</head>
+<style>
+      :root{--bg:#FFFFFF;--card:#fff;--border:#eaeaea;--text:#1a3f56;--muted:#cd8522}
     *{box-sizing:border-box}
     body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
     .wrap{max-width:1100px;margin:auto;padding:16px}
@@ -40,16 +40,19 @@ $categorii = [
     @media(min-width:960px){.grid{grid-template-columns:repeat(4,1fr)}}
     .card{display:block;border:1px solid var(--border);border-radius:14px;background:var(--card);padding:14px;text-decoration:none;color:inherit;box-shadow:0 1px 4px rgba(0,0,0,.04);transition:transform .06s ease, box-shadow .06s ease}
     .card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
-    .card img{width:56px;height:56px;object-fit:contain;background:#f5f5f5;border-radius:10px}
+    .card img{width:60px;height:60px;object-fit:contain;background:#fff;border-radius:10px}
     .card h3{margin:10px 0 4px;font-size:1rem}
     .card p{margin:0;color:var(--muted);font-size:.9rem}
     footer{border-top:1px solid var(--border);opacity:.75;margin-top:16px}
-  </style>
-</head>
+*{box-sizing:border-box}
+html,body{height:100%}
+</style>
 <body>
 <header>
   <div class="wrap bar">
-    <h1>Compari Piese Auto</h1>
+    <div class="logo-container">
+      <img src="assets/logo/logo.png" alt="logo">
+    </div>
     <nav>
       <a href="index.php">Home</a>
       <!-- Poți adăuga linkuri către pagina 2/3 când sunt gata -->
