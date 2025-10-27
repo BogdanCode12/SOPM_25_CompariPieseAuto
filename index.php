@@ -5,59 +5,33 @@
 $categorii = [
   ["id"=>"motor",        "nume"=>"Motor",              "icon"=>"assets/icons/motor.svg"],
   ["id"=>"transmisie",   "nume"=>"Transmisie",         "icon"=>"assets/icons/gear.svg"],
-  ["id"=>"franare",      "nume"=>"Frânare",            "icon"=>"assets/icons/brake.svg"],
-  ["id"=>"directie",     "nume"=>"Direcție & Suspensie","icon"=>"assets/icons/suspension.svg"],
+  ["id"=>"franare",      "nume"=>"Franare",            "icon"=>"assets/icons/brake.svg"],
+  ["id"=>"directie",     "nume"=>"Directie & Suspensie","icon"=>"assets/icons/suspension.svg"],
   ["id"=>"electric",     "nume"=>"Electric & Electronic","icon"=>"assets/icons/electric.svg"],
   ["id"=>"filtrare",     "nume"=>"Filtrare & Aer",     "icon"=>"assets/icons/filter.svg"],
   ["id"=>"iluminare",    "nume"=>"Iluminare",          "icon"=>"assets/icons/light.svg"],
   ["id"=>"caroserie",    "nume"=>"Caroserie & Accesorii","icon"=>"assets/icons/body.svg"],
-  ["id"=>"racire",       "nume"=>"Răcire & Încălzire", "icon"=>"assets/icons/cooling.svg"],
+  ["id"=>"racire",       "nume"=>"Racire & Incalzire", "icon"=>"assets/icons/cooling.svg"],
   ["id"=>"uleiuri",      "nume"=>"Uleiuri & Fluide",   "icon"=>"assets/icons/oil.svg"],
 ];
 ?>
 <!doctype html>
 <html lang="ro">
 <head>
+  <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logo/apple-touch-icon.png">
+  <link rel="android-chrome-192x192" sizes="192x192" href="android-chrome-192x192.png">
+  <link rel="android-chrome-512x512" sizes="512x512" href="android-chrome-512x512.png">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Compari Piese Auto — Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<style>
-      :root{--bg:#FFFFFF;--card:#fff;--border:#eaeaea;--text:#1a3f56;--muted:#cd8522}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text)}
-    .wrap{max-width:1100px;margin:auto;padding:16px}
-    header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--border);z-index:10}
-    header .bar{display:flex;align-items:center;justify-content:space-between;gap:12px}
-    h1{font-size:1.25rem;margin:8px 0}
-    nav a{color:inherit;text-decoration:none;opacity:.8}
-    nav a:hover{opacity:1}
-    .hero{padding:18px 0 8px}
-    .hero p{margin:6px 0;color:var(--muted)}
-    .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px;margin:12px 0 24px}
-    @media(min-width:640px){.grid{grid-template-columns:repeat(2,1fr)}}
-    @media(min-width:960px){.grid{grid-template-columns:repeat(4,1fr)}}
-    .card{display:block;border:1px solid var(--border);border-radius:14px;background:var(--card);padding:14px;text-decoration:none;color:inherit;box-shadow:0 1px 4px rgba(0,0,0,.04);transition:transform .06s ease, box-shadow .06s ease}
-    .card:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
-    .card img{width:60px;height:60px;object-fit:contain;background:#fff;border-radius:10px}
-    .card h3{margin:10px 0 4px;font-size:1rem}
-    .card p{margin:0;color:var(--muted);font-size:.9rem}
-    footer{border-top:1px solid var(--border);opacity:.75;margin-top:16px}
-*{box-sizing:border-box}
-html,body{height:100%}
-</style>
 <body>
 <header>
-  <div class="wrap bar">
-    <div class="logo-container">
-      <img src="assets/logo/logo.png" alt="logo">
-    </div>
-    <nav>
-      <a href="index.php">Home</a>
-      <!-- Poți adăuga linkuri către pagina 2/3 când sunt gata -->
-    </nav>
-  </div>
+  <?php include __DIR__ . '/logo.php'; ?> 
 </header>
 
 <main class="wrap">
@@ -77,8 +51,6 @@ html,body{height:100%}
   </section>
 </main>
 
-<footer class="wrap">
-  <p>© SOPM • Compari Piese Auto</p>
-</footer>
+  <?php include __DIR__ . '/footer.php'; ?> 
 </body>
 </html>
