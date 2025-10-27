@@ -2,15 +2,15 @@
 -- BAZA DE DATE: softhave_comparipieseauto
 -- -------------------------------------------------------------
 
-CREATE DATABASE IF NOT EXISTS softhave_comparipieseauto CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-USE softhave_comparipieseauto;
+CREATE DATABASE IF NOT EXISTS softhave_sopm CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE softhave_sopm;
 
 -- -------------------------------------------------------------
 -- Tabel: categorii
 -- -------------------------------------------------------------
 
 CREATE TABLE categorii (
-    id VARCHAR(50) PRIMARY KEY,
+    id VARCHAR(150) PRIMARY KEY,
     nume VARCHAR(100) NOT NULL,
     icon VARCHAR(255) DEFAULT NULL
 );
@@ -18,13 +18,13 @@ CREATE TABLE categorii (
 INSERT INTO categorii (id, nume, icon) VALUES
 ('motor', 'Motor', 'assets/icons/motor.svg'),
 ('transmisie', 'Transmisie', 'assets/icons/gear.svg'),
-('franare', 'Frânare', 'assets/icons/brake.svg'),
-('directie', 'Direcție & Suspensie', 'assets/icons/suspension.svg'),
+('franare', 'Franare', 'assets/icons/brake.svg'),
+('directie', 'Directie & Suspensie', 'assets/icons/suspension.svg'),
 ('electric', 'Electric & Electronic', 'assets/icons/electric.svg'),
 ('filtrare', 'Filtrare & Aer', 'assets/icons/filter.svg'),
 ('iluminare', 'Iluminare', 'assets/icons/light.svg'),
 ('caroserie', 'Caroserie & Accesorii', 'assets/icons/body.svg'),
-('racire', 'Răcire & Încălzire', 'assets/icons/cooling.svg'),
+('racire', 'Racire & Incalzire', 'assets/icons/cooling.svg'),
 ('uleiuri', 'Uleiuri & Fluide', 'assets/icons/oil.svg');
 
 -- -------------------------------------------------------------
@@ -148,5 +148,5 @@ INSERT INTO produse (nume, cod_piesa, pret, imagine, link, sursa, categorie_id) 
 ('Aripa PRASCO BM0483014', 'BM0483014', 573.00, 'https://www.epiesa.ro/produse_2024_4/340/bm0483014.jpg', 'https://www.epiesa.ro/aripa-prasco-bm0483014-epsroprdt-3239519.htm', 'epiesa', 'caroserie'),
 ('PRASCO BM0483014 Aripa pentru BMW Seria 5', 'BM0483014', 513.00, 'https://cdn.autodoc.de/thumb?id=7450814&m=0&n=0&lng=ro&rev=94077948', 'https://www.autodoc24.ro/prasco/7450814', 'autodoc24', 'caroserie'),
 ('Fixare usa METZGER 2312366', '2312366', 215.00, 'https://www.epiesa.ro/produse_2024_4/94/2312366.jpg', 'https://www.epiesa.ro/fixare-usa-metzger-2312366-epsroprdt-1910279.htm', 'epiesa', 'caroserie'),
-('METZGER 2312366 Fixare usa pentru BMW Seria 5', '2312366', 174.99, 'https://cdn.autodoc.de/thumb?id=23273665&m=0&n=0&lng=ro&rev=94077948', 'https://www.autodoc24.ro/metzger/23273665', 'autodoc24', 'caroserie'),
+('METZGER 2312366 Fixare usa pentru BMW Seria 5', '2312366', 174.99, 'https://cdn.autodoc.de/thumb?id=23273665&m=0&n=0&lng=ro&rev=94077948', 'https://www.autodoc24.ro/metzger/23273665', 'autodoc24', 'caroserie');
 
